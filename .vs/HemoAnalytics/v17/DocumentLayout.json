@@ -1,0 +1,240 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|c:\\users\\rmadureira\\documents\\ufg\\simple-client-server-with-sockets-2\\hemoanalytics\\hemoanalytics\\hemoanalytics\\services\\hemogramanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|solutionrelative:hemoanalytics\\services\\hemogramanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|c:\\users\\rmadureira\\documents\\ufg\\simple-client-server-with-sockets-2\\hemoanalytics\\hemoanalytics\\hemoanalytics\\controllers\\hemoanalyticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|solutionrelative:hemoanalytics\\controllers\\hemoanalyticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|c:\\users\\rmadureira\\documents\\ufg\\simple-client-server-with-sockets-2\\hemoanalytics\\hemoanalytics\\hemoanalytics\\dto\\analysisresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|solutionrelative:hemoanalytics\\dto\\analysisresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|c:\\users\\rmadureira\\documents\\ufg\\simple-client-server-with-sockets-2\\hemoanalytics\\hemoanalytics\\hemoanalytics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|solutionrelative:hemoanalytics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|c:\\users\\rmadureira\\documents\\ufg\\simple-client-server-with-sockets-2\\hemoanalytics\\hemoanalytics\\hemoanalytics\\interfaces\\services\\ihemogramanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|solutionrelative:hemoanalytics\\interfaces\\services\\ihemogramanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|c:\\users\\rmadureira\\documents\\ufg\\simple-client-server-with-sockets-2\\hemoanalytics\\hemoanalytics\\hemoanalytics\\dto\\bloodcounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|solutionrelative:hemoanalytics\\dto\\bloodcounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|c:\\users\\rmadureira\\documents\\ufg\\simple-client-server-with-sockets-2\\hemoanalytics\\hemoanalytics\\hemoanalytics\\dto\\coronaryriskratios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|solutionrelative:hemoanalytics\\dto\\coronaryriskratios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 28,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:151:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:150:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnalysisResult.cs",
+              "DocumentMoniker": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Dto\\AnalysisResult.cs",
+              "RelativeDocumentMoniker": "HemoAnalytics\\Dto\\AnalysisResult.cs",
+              "ToolTip": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Dto\\AnalysisResult.cs",
+              "RelativeToolTip": "HemoAnalytics\\Dto\\AnalysisResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T22:56:06.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IHemogramAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Interfaces\\Services\\IHemogramAnalysisService.cs",
+              "RelativeDocumentMoniker": "HemoAnalytics\\Interfaces\\Services\\IHemogramAnalysisService.cs",
+              "ToolTip": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Interfaces\\Services\\IHemogramAnalysisService.cs",
+              "RelativeToolTip": "HemoAnalytics\\Interfaces\\Services\\IHemogramAnalysisService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T22:43:04.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CoronaryRiskRatios.cs",
+              "DocumentMoniker": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Dto\\CoronaryRiskRatios.cs",
+              "RelativeDocumentMoniker": "HemoAnalytics\\Dto\\CoronaryRiskRatios.cs",
+              "ToolTip": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Dto\\CoronaryRiskRatios.cs",
+              "RelativeToolTip": "HemoAnalytics\\Dto\\CoronaryRiskRatios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T22:34:25.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BloodCounts.cs",
+              "DocumentMoniker": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Dto\\BloodCounts.cs",
+              "RelativeDocumentMoniker": "HemoAnalytics\\Dto\\BloodCounts.cs",
+              "ToolTip": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Dto\\BloodCounts.cs",
+              "RelativeToolTip": "HemoAnalytics\\Dto\\BloodCounts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T22:33:58.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HemogramAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Services\\HemogramAnalysisService.cs",
+              "RelativeDocumentMoniker": "HemoAnalytics\\Services\\HemogramAnalysisService.cs",
+              "ToolTip": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Services\\HemogramAnalysisService.cs",
+              "RelativeToolTip": "HemoAnalytics\\Services\\HemogramAnalysisService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T22:32:37.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HemoAnalyticsController.cs",
+              "DocumentMoniker": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Controllers\\HemoAnalyticsController.cs",
+              "RelativeDocumentMoniker": "HemoAnalytics\\Controllers\\HemoAnalyticsController.cs",
+              "ToolTip": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Controllers\\HemoAnalyticsController.cs",
+              "RelativeToolTip": "HemoAnalytics\\Controllers\\HemoAnalyticsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T22:30:39.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Program.cs",
+              "RelativeDocumentMoniker": "HemoAnalytics\\Program.cs",
+              "ToolTip": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\Program.cs",
+              "RelativeToolTip": "HemoAnalytics\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T22:31:30.185Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1536,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

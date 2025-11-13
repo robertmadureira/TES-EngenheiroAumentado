@@ -1,0 +1,9 @@
+﻿namespace HemoAnalytics.Dto
+{
+    public class AnalysisResult
+    {
+        public CoronaryRiskRatios Ratios { get; set; }
+        public bool AlertGenerated { get; set; }
+        public string AlertReason { get; set; }
+    }
+}

@@ -1,0 +1,66 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "HemoAnalytics",
+    "version": "1.0"
+  },
+  "paths": {
+    "/HemoAnalytics/analyze": {
+      "post": {
+        "tags": [
+          "HemoAnalytics"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BloodCounts"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BloodCounts"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BloodCounts"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BloodCounts": {
+        "type": "object",
+        "properties": {
+          "monocyteCount": {
+            "type": "number",
+            "format": "double"
+          },
+          "neutrophilCount": {
+            "type": "number",
+            "format": "double"
+          },
+          "lymphocyteCount": {
+            "type": "number",
+            "format": "double"
+          },
+          "plateletCount": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "HemoAnalytics.Controllers.HemoAnalyticsController",
+    "Method": "AnalyzeHemogram",
+    "RelativePath": "HemoAnalytics/analyze",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bloodCounts",
+        "Type": "HemoAnalytics.Dto.BloodCounts",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

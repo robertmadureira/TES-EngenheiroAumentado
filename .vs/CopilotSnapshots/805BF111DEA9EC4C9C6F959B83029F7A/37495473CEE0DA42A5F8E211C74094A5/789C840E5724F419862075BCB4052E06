@@ -1,0 +1,64 @@
+﻿using HemoAnalytics.Dto;
+using HemoAnalytics.Interfaces.Services;
+using System.Threading.Tasks;
+
+namespace HemoAnalytics.Services
+{
+    public class HemogramAnalysisService : IHemogramAnalysisService
+    {
+        public async Task<AnalysisResult> AnalyzeRiskAndAlertAsync(BloodCounts counts)
+        {
+            // Cálculo dos índices
+            var ratios = new CoronaryRiskRatios
+            {
+                SIRI = (counts.MonocyteCount * counts.NeutrophilCount) / counts.LymphocyteCount,
+                MLR = counts.MonocyteCount / counts.LymphocyteCount,
+                LPR100 = (counts.LymphocyteCount / counts.PlateletCount) * 100,
+                LMR = counts.LymphocyteCount / counts.MonocyteCount,
+                PLR = counts.PlateletCount / counts.LymphocyteCount
+            };
+
+            // Lógica de alerta
+            bool alert = false;
+            string alertReason = string.Empty;
+
+            // SIRI: risco aumenta até 1,462
+            if (ratios.SIRI >= 1.462)
+            {
+                alert = true;
+                alertReason += "SIRI elevado (>= 1,462). ";
+            }
+            // MLR: risco aumenta com valores altos
+            if (ratios.MLR > 0.4) // valor de corte sugerido na literatura
+            {
+                alert = true;
+                alertReason += "MLR elevado (> 0,4). ";
+            }
+            // LPR100: risco aumenta com valores altos
+            if (ratios.LPR100 > 4.0) // valor de corte sugerido
+            {
+                alert = true;
+                alertReason += "LPR*100 elevado (> 4,0). ";
+            }
+            // LMR: risco maior se < 3,75
+            if (ratios.LMR < 3.75)
+            {
+                alert = true;
+                alertReason += "LMR baixo (< 3,75). ";
+            }
+            // PLR: risco maior se < 185,714
+            if (ratios.PLR < 185.714)
+            {
+                alert = true;
+                alertReason += "PLR baixo (< 185,714). ";
+            }
+
+            return new AnalysisResult
+            {
+                Ratios = ratios,
+                AlertGenerated = alert,
+                AlertReason = alert ? alertReason.Trim() : null
+            };
+        }
+    }
+}

@@ -1,0 +1,60 @@
+﻿using HemoAnalytics.Dto;
+using HemoAnalytics.Interfaces.Services;
+using System.Threading.Tasks;
+using System.Globalization;
+
+namespace HemoAnalytics.Services
+{
+    public class HemogramAnalysisService : IHemogramAnalysisService
+    {
+        public async Task<AnalysisResult> AnalyzeRiskAndAlertAsync(BloodCounts counts)
+        {
+            // Cálculo dos índices
+            var ratios = new CoronaryRiskRatios
+            {
+                SIRI = (counts.MonocyteCount * counts.NeutrophilCount) / counts.LymphocyteCount,
+                MLR = counts.MonocyteCount / counts.LymphocyteCount,
+                LPR100 = (counts.LymphocyteCount / counts.PlateletCount) * 100,
+                LMR = counts.LymphocyteCount / counts.MonocyteCount,
+                PLR = counts.PlateletCount / counts.LymphocyteCount
+            };
+
+            // Lógica de alerta e status detalhado
+            bool alert = false;
+            var statusMsg = new System.Text.StringBuilder();
+            var culture = CultureInfo.InvariantCulture;
+
+            // SIRI
+            string siriStatus = ratios.SIRI >= 1.462 ? "elevado (>= 1,462)" : "normal (< 1,462)";
+            if (ratios.SIRI >= 1.462) alert = true;
+            statusMsg.AppendLine($"SIRI: {ratios.SIRI.ToString("F3", culture)} - {siriStatus}");
+
+            // MLR
+            string mlrStatus = ratios.MLR > 0.4 ? "elevado (> 0,4)" : "normal (<= 0,4)";
+            if (ratios.MLR > 0.4) alert = true;
+            statusMsg.AppendLine($"MLR: {ratios.MLR.ToString("F3", culture)} - {mlrStatus}");
+
+            // LPR100
+            string lpr100Status = ratios.LPR100 > 4.0 ? "elevado (> 4,0)" : "normal (<= 4,0)";
+            if (ratios.LPR100 > 4.0) alert = true;
+            statusMsg.AppendLine($"LPR*100: {ratios.LPR100.ToString("F3", culture)} - {lpr100Status}");
+
+            // LMR
+            string lmrStatus = ratios.LMR < 3.75 ? "baixo (< 3,75)" : "normal (>= 3,75)";
+            if (ratios.LMR < 3.75) alert = true;
+            statusMsg.AppendLine($"LMR: {ratios.LMR.ToString("F3", culture)} - {lmrStatus}");
+
+            // PLR
+            string plrStatus = ratios.PLR < 185.714 ? "baixo (< 185,714)" : "normal (>= 185,714)";
+            if (ratios.PLR < 185.714) alert = true;
+            statusMsg.AppendLine($"PLR: {ratios.PLR.ToString("F3", culture)} - {plrStatus}");
+
+            return new AnalysisResult
+            {
+                Ratios = ratios,
+                AlertGenerated = alert,
+                AlertReason = statusMsg.ToString().Trim()
+            };
+        }
+    }
+}
