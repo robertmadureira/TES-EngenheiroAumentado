@@ -33,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|c:\\users\\rmadureira\\documents\\ufg\\simple-client-server-with-sockets-2\\tes-engenheiroaumentado\\hemoanalytics\\dto\\coronaryriskratios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B54D75D5-22B2-463B-B036-ABF51984C266}|HemoAnalytics\\HemoAnalytics.csproj|solutionrelative:hemoanalytics\\dto\\coronaryriskratios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\TES-EngenheiroAumentado\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 25,
+          "SelectedChildIndex": 24,
           "Children": [
             {
               "$type": "Bookmark",
@@ -146,26 +142,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\TES-EngenheiroAumentado\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\TES-EngenheiroAumentado\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVDhPrZRNTgIxFMerDIaEhHgU97JxwUKGGaNeQJdyCY0XUBDWGhg4AB\u002BuvQk7OQCRFTP1fXWmMxUMCT94ee177eu/LVQdFK31kTSJ0WgEIa0SMJ2A6QTHcF9iicQqlYpa/6zv2\u002B2HD5nuEkWR/l4udRzHZBtjGzFor1YrPR6P9WKx0MNhpN96vTuZThyLJ1AJLK/iJFFxjBanBsXIozqkWq2qev1c1Wq19063e0ZBwBNP4JaQ6WRC/i8ajQb5wWBAvnxyghpOqQPkC8L5IEEQKjgxaqOTFsCd65tb6nmlkur1\u002BxwXCgX58KfT7QptwvCK52wrSLcJvtUKOABkQ6HFXwbGsmMRBkchzpjNphLZDSrEn5G1qnsp\u002BPEtheloXouRnXDTTjhb5tXmeyg0IgzuliHp\u002By0OANbiOCDXp1IYo3mMUxBT8/mMA/8QhGH6ZzC4Zwi5ZqoQB9M3h62I/\u002B/SAQpniBmtPvdQyGeYUdgyX8pl05eIBSxmTzQYEYbc42AuJQWLGJNQEcrJG4A4BTHneSW2sqfKOyybkxXMPbAvrx3IsyLzkPJFmUcWYtDntjG6lIvnp8cvKXNIlPoFvstpJRlQPIAAAAAASUVORK5CYII=",
-              "WhenOpened": "2025-11-27T22:45:12.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "HemogramAnalysisServiceTest.cs",
               "DocumentMoniker": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\TES-EngenheiroAumentado\\HemoAnalytics\\Tests\\HemogramAnalysisServiceTest.cs",
               "RelativeDocumentMoniker": "HemoAnalytics\\Tests\\HemogramAnalysisServiceTest.cs",
               "ToolTip": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\TES-EngenheiroAumentado\\HemoAnalytics\\Tests\\HemogramAnalysisServiceTest.cs",
               "RelativeToolTip": "HemoAnalytics\\Tests\\HemogramAnalysisServiceTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T22:42:13.555Z",
               "EditorCaption": ""
