@@ -69,3 +69,13 @@ paket-files/
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
+
+# ...existing code...
+
+# Visual Studio cache
+.vs/
+*.cache
+
+# Build results
+bin/
+obj/

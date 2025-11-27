@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HemoAnalytics")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ffd3bcde678ad58e1bcdfad4aeb8eb83f1fa6e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ee9b73bdc97c0e02248ad53aad984f5d1336d31")]
 [assembly: System.Reflection.AssemblyProductAttribute("HemoAnalytics")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HemoAnalytics")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
