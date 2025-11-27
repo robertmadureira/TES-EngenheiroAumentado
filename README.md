@@ -47,3 +47,49 @@ Estes são os índices que, quando elevados, foram associados a uma menor incid�
 * **Cálculo:** Contagem de Plaquetas / Contagem de Linfócitos.
 * **Associação:** O PLR mostrou uma correlação negativa com a incidência de DC.
 > **Detalhe Importante:** A relação forma uma "curva em U". O risco de DC diminui à medida que o PLR aumenta, até atingir um ponto de inflexão de 185,714. Após esse ponto, o benefício protetor cessa e o risco pode voltar a subir.
+
+
+## Documentação Técnica — Serviço de Análise de Hemograma
+
+### Descrição
+
+O serviço `HemogramAnalysisService` é responsável por calcular índices hematológicos associados ao risco de Doença Coronariana (DC) a partir de contagens sanguíneas fornecidas. Ele avalia automaticamente os resultados, gera alertas e fornece um status detalhado para cada índice.
+
+### Funcionamento
+
+O método principal é:
+
+- **AnalyzeRiskAndAlertAsync(BloodCounts counts):**
+  - Recebe um objeto `BloodCounts` com as contagens de Monócitos, Neutrófilos, Linfócitos e Plaquetas.
+  - Calcula os seguintes índices:
+    - **SIRI:** (Monócitos × Neutrófilos) / Linfócitos
+    - **MLR:** Monócitos / Linfócitos
+    - **LPR*100:** (Linfócitos / Plaquetas) × 100
+    - **LMR:** Linfócitos / Monócitos
+    - **PLR:** Plaquetas / Linfócitos
+  - Analisa os índices calculados, compara com os pontos de corte definidos na literatura e gera:
+    - Um alerta (`AlertGenerated`) caso algum índice esteja fora do valor de referência.
+    - Uma mensagem detalhada (`AlertReason`) explicando o status de cada índice.
+    - Uma lista de razões específicas para o alerta (`AlertReasons`).
+    - Um dicionário de status para cada índice (`Status`).
+
+### Pontos de Corte Utilizados
+
+- **SIRI:** Alerta se ≥ 1,462
+- **MLR:** Alerta se > 0,4
+- **LPR*100:** Alerta se > 4,0
+- **LMR:** Alerta se < 3,75
+- **PLR:** Alerta se < 185,714
+
+### Saída Esperada
+
+O resultado (`AnalysisResult`) inclui:
+- Os índices calculados (`Ratios`)
+- Status de alerta (`AlertGenerated`)
+- Mensagem detalhada (`AlertReason`)
+- Status individual de cada índice (`Status`)
+- Lista de razões para alerta (`AlertReasons`)
+
+---
+
+> Consulte a seção "Tabela Resumo dos Indicadores" acima para mais detalhes sobre cada índice e sua relação com a Doença Coronariana.
