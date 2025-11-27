@@ -79,3 +79,5 @@ ScaffoldingReadMe.txt
 # Build results
 bin/
 obj/
+HemoAnalytics/obj/
+HemoAnalytics/bin/
