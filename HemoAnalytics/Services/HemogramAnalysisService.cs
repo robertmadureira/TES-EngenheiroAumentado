@@ -10,20 +10,33 @@ namespace HemoAnalytics.Services
     {
         public async Task<AnalysisResult> AnalyzeRiskAndAlertAsync(BloodCounts counts)
         {
-            // Cálculo dos índices
+            // Cálculo dos índices usando métodos privados
             var ratios = new CoronaryRiskRatios
             {
-                SIRI = (counts.MonocyteCount * counts.NeutrophilCount) / counts.LymphocyteCount,
-                MLR = counts.MonocyteCount / counts.LymphocyteCount,
-                LPR100 = (counts.LymphocyteCount / counts.PlateletCount) * 100,
-                LMR = counts.LymphocyteCount / counts.MonocyteCount,
-                PLR = counts.PlateletCount / counts.LymphocyteCount
+                SIRI = CalculateSIRI(counts),
+                MLR = CalculateMLR(counts),
+                LPR100 = CalculateLPR100(counts),
+                LMR = CalculateLMR(counts),
+                PLR = CalculatePLR(counts)
             };
 
-            // Lógica de alerta e status detalhado
+            // Lógica de alerta e status detalhado movida para métodos privados
+            var (alert, status, alertReasons) = AnalyzeIndices(ratios);
+            var statusMsg = BuildStatusMessage(ratios, status);
+
+            return new AnalysisResult
+            {
+                Ratios = ratios,
+                AlertGenerated = alert,
+                AlertReason = statusMsg.Trim(),
+                Status = status,
+                AlertReasons = alertReasons
+            };
+        }
+
+        private (bool alert, Dictionary<string, string> status, List<string> alertReasons) AnalyzeIndices(CoronaryRiskRatios ratios)
+        {
             bool alert = false;
-            var statusMsg = new System.Text.StringBuilder();
-            var culture = CultureInfo.InvariantCulture;
             var status = new Dictionary<string, string>();
             var alertReasons = new List<string>();
 
@@ -34,7 +47,6 @@ namespace HemoAnalytics.Services
                 alert = true;
                 alertReasons.Add("SIRI elevado (>= 1,462)");
             }
-            statusMsg.AppendLine($"SIRI: {ratios.SIRI.ToString("F3", culture)} - {siriStatus} (corte: 1,462)");
 
             // MLR
             string mlrStatus = ratios.MLR > 0.4 ? "elevado" : "normal";
@@ -43,7 +55,6 @@ namespace HemoAnalytics.Services
                 alert = true;
                 alertReasons.Add("MLR elevado (> 0,4)");
             }
-            statusMsg.AppendLine($"MLR: {ratios.MLR.ToString("F3", culture)} - {mlrStatus} (corte: 0,4)");
 
             // LPR100
             string lpr100Status = ratios.LPR100 > 4.0 ? "elevado" : "normal";
@@ -52,7 +63,6 @@ namespace HemoAnalytics.Services
                 alert = true;
                 alertReasons.Add("LPR*100 elevado (> 4,0)");
             }
-            statusMsg.AppendLine($"LPR*100: {ratios.LPR100.ToString("F3", culture)} - {lpr100Status} (corte: 4,0)");
 
             // LMR
             string lmrStatus = ratios.LMR < 3.75 ? "baixo" : "normal";
@@ -61,7 +71,6 @@ namespace HemoAnalytics.Services
                 alert = true;
                 alertReasons.Add("LMR baixo (< 3,75)");
             }
-            statusMsg.AppendLine($"LMR: {ratios.LMR.ToString("F3", culture)} - {lmrStatus} (corte: 3,75)");
 
             // PLR
             string plrStatus = ratios.PLR < 185.714 ? "baixo" : "normal";
@@ -70,16 +79,47 @@ namespace HemoAnalytics.Services
                 alert = true;
                 alertReasons.Add("PLR baixo (< 185,714)");
             }
-            statusMsg.AppendLine($"PLR: {ratios.PLR.ToString("F3", culture)} - {plrStatus} (corte: 185,714)");
 
-            return new AnalysisResult
-            {
-                Ratios = ratios,
-                AlertGenerated = alert,
-                AlertReason = statusMsg.ToString().Trim(),
-                Status = status,
-                AlertReasons = alertReasons
-            };
+            return (alert, status, alertReasons);
+        }
+
+        // Método privado para construir a mensagem de status
+        private string BuildStatusMessage(CoronaryRiskRatios ratios, Dictionary<string, string> status)
+        {
+            var culture = CultureInfo.InvariantCulture;
+            var statusMsg = new System.Text.StringBuilder();
+            statusMsg.AppendLine($"SIRI: {ratios.SIRI.ToString("F3", culture)} - {status["siri"]} (corte: 1,462)");
+            statusMsg.AppendLine($"MLR: {ratios.MLR.ToString("F3", culture)} - {status["mlr"]} (corte: 0,4)");
+            statusMsg.AppendLine($"LPR*100: {ratios.LPR100.ToString("F3", culture)} - {status["lpr100"]} (corte: 4,0)");
+            statusMsg.AppendLine($"LMR: {ratios.LMR.ToString("F3", culture)} - {status["lmr"]} (corte: 3,75)");
+            statusMsg.AppendLine($"PLR: {ratios.PLR.ToString("F3", culture)} - {status["plr"]} (corte: 185,714)");
+            return statusMsg.ToString();
+        }
+
+        // Métodos privados para cálculo dos índices
+        private double CalculateSIRI(BloodCounts counts)
+        {
+            return (counts.MonocyteCount * counts.NeutrophilCount) / counts.LymphocyteCount;
+        }
+
+        private double CalculateMLR(BloodCounts counts)
+        {
+            return counts.MonocyteCount / counts.LymphocyteCount;
+        }
+
+        private double CalculateLPR100(BloodCounts counts)
+        {
+            return (counts.LymphocyteCount / counts.PlateletCount) * 100;
+        }
+
+        private double CalculateLMR(BloodCounts counts)
+        {
+            return counts.LymphocyteCount / counts.MonocyteCount;
+        }
+
+        private double CalculatePLR(BloodCounts counts)
+        {
+            return counts.PlateletCount / counts.LymphocyteCount;
         }
     }
 }

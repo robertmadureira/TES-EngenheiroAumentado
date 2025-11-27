@@ -454,11 +454,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics.csproj",
+      "projectUniqueName": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\TES-EngenheiroAumentado\\HemoAnalytics\\HemoAnalytics.csproj",
       "projectName": "HemoAnalytics",
-      "projectPath": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics.csproj",
+      "projectPath": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\TES-EngenheiroAumentado\\HemoAnalytics\\HemoAnalytics.csproj",
       "packagesPath": "C:\\Users\\rmadureira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\HemoAnalytics\\HemoAnalytics\\HemoAnalytics\\obj\\",
+      "outputPath": "C:\\Users\\rmadureira\\Documents\\UFG\\simple-client-server-with-sockets-2\\TES-EngenheiroAumentado\\HemoAnalytics\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
